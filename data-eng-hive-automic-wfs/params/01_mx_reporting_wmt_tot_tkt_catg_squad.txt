@@ -1,0 +1,73 @@
+﻿#==========================================================================================================================#
+# FILE.......: ............................................................................................................#
+# DESCRIPTION: For WMT-MX to be executed manually or via Automic Workflow .................................................#
+# AUTHOR.....: ArBR 2021-0401..............................................................................................#
+# PARAMETERS.: ............................................................................................................#
+#...$hadoop_queue                  &HADOOP_QUEUE#                    intlprcincld..........................................#
+#...$region_code                   &REGION_CODE#                     'MX'..................................................#
+#...$beg_date                      &BEG_DATE#                        '2021-01-01'..........................................#
+#...$end_date                      &END_DATE#                        '2021-01-02'..........................................#
+#==========================================================================================================================#
+Description: "WMT-MX VIEWS-Reporting Workflow"
+HiveQuery: 
+""
+
+-- .........................................................................................................................
+-- AUTOMIC-WF-PARAMS
+-- .........................................................................................................................
+&HADOOP_QUEUE#                          intlprcincld
+&REGION_CODE#                    'MX'
+&COMPANY_CODE#                   'WMT-MX'
+&BEG_DATE#                       '2021-01-01'
+&END_DATE#                       '2021-01-02'
+. . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . .
+
+-- .........................................................................................................................
+-- AUTOMIC-JOB-PARAMS
+-- .........................................................................................................................
+$hadoop_queue                    &HADOOP_QUEUE#
+$region_code                     &REGION_CODE#
+$company_code                    &COMPANY_CODE#
+$beg_date                        &BEG_DATE#
+$end_date                        &END_DATE#
+$src_schema_mx_core_dim          &SRC_SCHEMA_MX_CORE_DIM#
+$src_schema_mx_spot_run          &SRC_SCHEMA_MX_SPOT_RUN#
+$src_schema_mx_ecomm             &SRC_SCHEMA_MX_ECOMM#
+$stg_schema                      &STG_SCHEMA#
+$target_schema                   &TARGET_SCHEMA#
+$src_table_item_dim              &SRC_TABLE_ITEM_DIM#
+$src_table_dimensions_tribu      &SRC_TABLE_DIMENSIONS_TRIBU#
+$src_table_dimensions_dept_cat   &SRC_TABLE_DIMENSIONS_DEPT_CAT#
+$src_table_visit_scan_wmt        &SRC_TABLE_VISIT_SCAN_WMT#
+$stg_table_tot_ly                &STG_TABLE_TOT_LY#
+$stg_table_tot_cy                &STG_TABLE_TOT_CY#
+$target_table_catg               &TARGET_TABLE_CATG#
+$target_table_squad              &TARGET_TABLE_SQUAD#
+
+====>>
+\$hadoop_queue=&HADOOP_QUEUE#,
+\$region_code=&REGION_CODE#,
+\$company_code=&COMPANY_CODE#,
+\$beg_date=&BEG_DATE#,
+\$end_date=&END_DATE#,
+\$src_schema_mx_core_dim=&SRC_SCHEMA_MX_CORE_DIM#,
+\$src_schema_mx_spot_run=&SRC_SCHEMA_MX_SPOT_RUN#,
+\$src_schema_mx_ecomm=&SRC_SCHEMA_MX_ECOMM#,
+\$stg_schema=&STG_SCHEMA#,
+\$target_schema=&TARGET_SCHEMA#,
+\$src_table_item_dim=&SRC_TABLE_ITEM_DIM#,
+\$src_table_dimensions_tribu=&SRC_TABLE_DIMENSIONS_TRIBU#,
+\$src_table_dimensions_dept_cat=&SRC_TABLE_DIMENSIONS_DEPT_CAT#,
+\$src_table_visit_scan_wmt=&SRC_TABLE_VISIT_SCAN_WMT#,
+\$stg_table_tot_ly=&STG_TABLE_TOT_LY#,
+\$stg_table_tot_cy=&STG_TABLE_TOT_CY#,
+\$target_table_catg=&TARGET_TABLE_CATG#,
+\$target_table_squad=&TARGET_TABLE_SQUAD#
+====>>
+
+
+====>>
+"\$hadoop_queue=&HADOOP_QUEUE#,\$region_code=&REGION_CODE#,\$company_code=&COMPANY_CODE#,\$beg_date=&BEG_DATE#,\$end_date=&END_DATE#,\$src_schema_mx_core_dim=&SRC_SCHEMA_MX_CORE_DIM#,\$src_schema_mx_spot_run=&SRC_SCHEMA_MX_SPOT_RUN#,\$src_schema_mx_ecomm=&SRC_SCHEMA_MX_ECOMM#,\$stg_schema=&STG_SCHEMA#,\$target_schema=&TARGET_SCHEMA#,\$src_table_item_dim=&SRC_TABLE_ITEM_DIM#,\$src_table_dimensions_tribu=&SRC_TABLE_DIMENSIONS_TRIBU#,\$src_table_dimensions_dept_cat=&SRC_TABLE_DIMENSIONS_DEPT_CAT#,\$src_table_visit_scan_wmt=&SRC_TABLE_VISIT_SCAN_WMT#,\$stg_table_tot_ly=&STG_TABLE_TOT_LY#,\$stg_table_tot_cy=&STG_TABLE_TOT_CY#,\$target_table_catg=&TARGET_TABLE_CATG#,\$target_table_squad=&TARGET_TABLE_SQUAD#"
+====>>

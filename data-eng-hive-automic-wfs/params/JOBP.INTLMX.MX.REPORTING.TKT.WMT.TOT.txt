@@ -1,0 +1,12 @@
+﻿&BEG_DATE#                       '2021-01-01'
+&COMPANY_CODE#                   'WMT-MX'
+&END_DATE#                       '2021-01-02'
+&HADOOP_QUEUE#                    intlpr.....
+&REGION_CODE#                    'MX'
+. . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . .
+
+====>>
+"\$hadoop_queue=&HADOOP_QUEUE#,\$region_code=&REGION_CODE#,..."
+====>>
