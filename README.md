@@ -1,10 +1,10 @@
 # Big Data Processing in Large Production Environments
 
-Big data processing in large-scale production environments, such as those seen in Walmart and other global enterprises, involves handling massive volumes of diverse data with precision and efficiency. This document outlines some components, tools, and practices used in such environments to provide guidance/visibility about real industrial-grade data engineering systems.
+Big data processing in large-scale production environments, such as those seen in Walmart and other global enterprises, involves handling massive volumes of diverse data with precision and efficiency. This document outlines some components, tools, and practices used in such environments to provide guidance/visibility about industrial-grade backend-data engineering ecosystems.
 
 ## Data Engineering
 
-Data engineering involves designing and building pipelines, scripts, storage systems that transform raw data into structured and usable formats. 
+Data engineering involves designing and building pipelines and scripts that transform raw data into structured and usable formats, while utilizing existing high-performance storage systems and ETL tools connected through clusters of servers to efficiently handle high-volume data processing.
 
 ### Key aspects include:
 
@@ -33,6 +33,8 @@ The Hadoop Distributed File System (HDFS) is a key component of the Hadoop ecosy
 - High throughput: Optimized for streaming large datasets.
 
 - Cost-effectiveness: Optimizes the hardware to reduce infrastructure costs.
+
+- Distributed Storage: Data in HDFS is stored across a cluster of machines, enabling parallel processing. This distributed structure allows to store, manage, and process large volumes of data efficiently.
 
 ## Hive SQL Language
 
@@ -94,7 +96,7 @@ Automic workflows orchestrate and automate the execution of data processing task
 
 ## Automic Broadcom
 
-Broadcom company provides industrial grade automation tools like **Autosys** ─used in support engineering to manage/control process/jobs─ and **Automic** to streamline operations in big data environments. 
+Broadcom company provides industrial grade automation tools like **Autosys** ─used in support engineering to manage/control process/jobs─ and **Automic** to streamline operations in big data environments. Automic is designed to automate business processes, IT operations, and data workflows, integrating orchestration, scheduling, and monitoring features.
 
 ## Focus on Optimization in Data Lakes
 
